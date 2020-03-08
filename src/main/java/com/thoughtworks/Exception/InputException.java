@@ -1,4 +1,4 @@
-package com.thoughtworks;
+package com.thoughtworks.Exception;
 
 public class InputException extends RuntimeException {
 

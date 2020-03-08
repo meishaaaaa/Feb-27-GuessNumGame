@@ -1,7 +1,8 @@
 package com.thoughtworks;
 
 
-import com.sun.tools.javac.comp.Check;
+import com.thoughtworks.Game.Result;
+import com.thoughtworks.Game.SetGame;
 
 public class App {
 
@@ -9,12 +10,12 @@ public class App {
 
         //输入输出和流程控制在 App 类中做
 
-        SetGame game = new SetGame();
-        game.setCorrectAnswer();
-        String correctAnswer = game.getCorrectAnswer();
-        System.out.println(correctAnswer);
+        String fileName = "answer.txt";
+        SetGame game = new SetGame(fileName);
 
-        SetGame.runCheck(correctAnswer);
+        Result.runCheck(game.getCorrectAnswer());
+
+
     }
 
 }
